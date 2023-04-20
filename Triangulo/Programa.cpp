@@ -5,22 +5,22 @@
 
 int main()
 {
-	Triangulo x, y;
-
-	double lado1x, lado2x, lado3x, lado1y, lado2y, lado3y;
+	
+    Triangulo x, y;
+    double lado1x, lado2x, lado3x, lado1y, lado2y, lado3y;
     
     int invalidoX = 0;
     int invalidoY = 0;
 
-	std::cout << "Lado 1 do Triangulo X : ";
-	std::cin >> lado1x;
-	x.SetA(lado1x);
-	std::cout << "Lado 2 do Triangulo X : ";
-	std::cin >> lado2x;
-	x.SetB(lado2x);
-	std::cout << "Lado 3 do Triangulo X : ";
-	std::cin >> lado3x;
-	x.SetC(lado3x);
+    std::cout << "Lado 1 do Triangulo X : ";
+    std::cin >> lado1x;
+    x.SetA(lado1x);
+    std::cout << "Lado 2 do Triangulo X : ";
+    std::cin >> lado2x;
+    x.SetB(lado2x);
+    std::cout << "Lado 3 do Triangulo X : ";
+    std::cin >> lado3x;
+    x.SetC(lado3x);
     
     std::cout << "\n";
 
