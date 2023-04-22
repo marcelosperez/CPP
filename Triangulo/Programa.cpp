@@ -56,8 +56,8 @@ int main()
      if (invalidoX == 0)
      {
         std::cout << std::fixed << std::setprecision(4);
-          std::cout << "O perimetro de X eh : " << x.Perimetro() << "\n";
-	      std::cout << "A area de X eh : " << areaX << "\n\n";
+        std::cout << "O perimetro de X eh : " << x.Perimetro() << "\n";
+	    std::cout << "A area de X eh : " << areaX << "\n\n";
       }
           
            
