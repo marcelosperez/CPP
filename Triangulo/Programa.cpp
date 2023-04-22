@@ -7,6 +7,7 @@ int main()
 {
 	
     Triangulo x, y;
+	
     double lado1x, lado2x, lado3x, lado1y, lado2y, lado3y;
     
     int invalidoX = 0;
@@ -28,7 +29,7 @@ int main()
     {
        std::cout << "Valores do Triangulo X invalidos ! " << "\n";
        std::cout << "Um lado não pode ser maior que a soma dos outros lados !" << "\n";
-       invalidoX += 1;
+       invalidoX = 1;
      }
             
 	std::cout << "Lado 1 do Triangulo Y : ";
@@ -47,7 +48,7 @@ int main()
 	 {
        std::cout << "Valores do Triangulo Y invalidos ! " << "\n";
        std::cout << "Um lado não pode ser maior que a soma dos outros lados !" << "\n\n";
-       invalidoY += 1;
+       invalidoY = 1;
      }
 
      double areaX = x.Area();
