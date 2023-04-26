@@ -4,44 +4,66 @@
 #include <cmath>
 
 
-double Produto::ValorTotalEmEstoque()
+
+void Produto::SetNome(std::string nome)
 {
-	return Quatidade;
+   this->nome = nome;
+}
+
+std::string Produto::GetNome()
+{
+   return nome;
+}
+
+
+void Produto::SetPreco(double preco)
+{
+   this->preco = preco;
+}
+
+double Produto::GetPreco()
+{
+   
+   return preco;
+}
+
+
+
+
+void Produto::SetQuantidade(int quantidade)
+{
+   this->quantidade = quantidade;
+}
+
+int Produto::GetQuantidade()
+{
+   
+   return quantidade;
+}
+
+
+
+
+
+
+
+double Produto::ValorTotalNoEstoque()
+{
+	return preco * quantidade;
 }
 
 void Produto::AdicionarProdutos(int quantidade)
 {
-	this->b = b;
- // (*this).b = b;
+	this->quantidade += quantidade;
+ // (*this).quantidade += quantidade ;
   // arrow operator (notacao seta)
 }
 
-double Triangulo::GetB()
+void Produto::RemoverProdutos(int quantidade)
 {
-	return b;
-}
-
-void Triangulo::SetC(double c)
-{
-	this->c = c;
-  //(*this).c = c;
+	this->quantidade -= quantidade;
+ // (*this).quantidade -= quantidade ;
   // arrow operator (notacao seta)
-}
-
-double Triangulo::GetC()
-{
-	return c;
-}
-
- double Triangulo::Perimetro()
-{
-    return a + b + c;
-}
-
-double Triangulo::Area()
-{
-    double sp = Perimetro() / 2;
-    return (double) sqrt(sp * (sp - a) * (sp - b) * (sp - c));
 }
 
 

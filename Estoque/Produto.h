@@ -5,13 +5,20 @@
 class Produto
 {
 	private:
-          std::string Nome;
-          double Preco;
-          int Quantidade;
+          std::string nome;
+          double preco;
+          int quantidade;
           
 	public:
-	      double ValorTotalEmEstoque();
-	      void AdicionarProdutos(int quantiade);
+	      double ValorTotalNoEstoque();
+	      void AdicionarProdutos(int quantidade);
 	      void RemoverProdutos(int quantidade); 
+	      void SetNome(std::string nome);
+	      std::string GetNome();
+	      void SetPreco(double preco);
+              double GetPreco();
+              void SetQuantidade(int quantidade);
+              int GetQuantidade();
+
 };
 
