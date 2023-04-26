@@ -24,8 +24,6 @@ int main()
     produto.SetQuantidade(quantidade);
     
     
-    
-    
     std::cout << produto.GetNome() << "\n";
     std::cout << produto.GetPreco() << "\n";
     std::cout << produto.GetQuantidade() << "\n"; 
