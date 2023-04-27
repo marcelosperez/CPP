@@ -11,7 +11,7 @@ int main()
 	
     Produto produto;
 	
-    std::cout << "Didite os dados do produto " << "\n";
+    std::cout << "Digite os dados do produto " << "\n";
     std::cout << "Nome: ";
     std::cin >> nome;
     produto.SetNome(nome);
