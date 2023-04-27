@@ -10,7 +10,7 @@ class Produto
           int quantidade;
           
 	public:
-	      void SetNome(std::string nome);
+	      void SetNome(std::string nome); // Os nomes dos metodos em C++ comecam com maiúsculas
 	      std::string GetNome();
 		  
 	      void SetPreco(double preco);
@@ -22,6 +22,10 @@ class Produto
 	      double ValorTotalNoEstoque();
 	      void AdicionarProdutos(int quantidade);
 	      void RemoverProdutos(int quantidade); 
+          
+          void MostrarProdutos();
+          
+          
 
 };
 

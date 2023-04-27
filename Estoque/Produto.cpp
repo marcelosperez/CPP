@@ -1,7 +1,7 @@
 #include "Produto.h"
 #include <iostream>
 #include <string>
-#include <cmath>
+#include <iomanip> //std::precision
 
 
 
@@ -42,11 +42,6 @@ int Produto::GetQuantidade()
 }
 
 
-
-
-
-
-
 double Produto::ValorTotalNoEstoque()
 {
 	return preco * quantidade;
@@ -66,5 +61,12 @@ void Produto::RemoverProdutos(int quantidade)
   // arrow operator (notacao seta)
 }
 
-
-
+void Produto::MostrarProdutos()
+{
+    std::cout << std::fixed << std::setprecision(2);
+    std::cout << nome 
+              << ", $ " << preco 
+              << ", "  << quantidade 
+              << " unidades, Total: $ " << ValorTotalNoEstoque();
+    std::cout << "\n"; // blank line
+}
