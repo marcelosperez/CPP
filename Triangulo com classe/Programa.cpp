@@ -6,6 +6,12 @@
 int main()
 {
 	
+	 // ---> Objeto fica na STACK, e nao na HEAP
+     // ---> Pois foi NAO criado com um ponteiro
+     // ---> E eh acessado com x.SetA
+     // ---> E nao com x->SetA
+     // ---> E nao eh necessario usar "delete"
+  
     Triangulo x, y;
 	
     double lado1x, lado2x, lado3x, lado1y, lado2y, lado3y;
