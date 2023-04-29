@@ -1,14 +1,8 @@
 #include <iostream>
 
-bool is4digits (std::string pin)
-{
-	bool status = true;
-	if (pin.length() != 4) 
-	{
-		status = false;
-	}
-	return status;
-}
+
+
+bool is4digits (std::string pin);
 
 //in boolean, 0 is false
 //and 1 is true
@@ -29,3 +23,18 @@ int main()
 	
 	return 0;
 }
+
+bool is4digits (std::string pin)
+{
+	bool status = true;
+	if (pin.length() != 4) 
+	{
+		status = false;
+	}
+	return status;
+}
+
+
+
+
+
