@@ -5,18 +5,15 @@
 class Retangulo
 {
 	private:
-          double larg;
+          double larg, alt;
 
           
 	public:
 	  void setLargura(double larg);
           double getLargura();
+          void setAltura(double alt);
+          double getAltura();
+          
 
 };
-
-
-
-
-
-
 

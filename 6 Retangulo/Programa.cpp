@@ -5,7 +5,7 @@
 
 int main()
 {
-    double larg;
+    double larg, alt;
 	
     Retangulo *reto = new Retangulo();
     delete reto;
@@ -14,9 +14,17 @@ int main()
     std::cin >> larg;
     reto->setLargura(larg);
     
-    std::cout << reto->getLargura();
+    std::cout << "Digite a altura: ";
+    std::cin >> alt;
+    reto->setAltura(alt);
+    
+    std::cout << "A largura é: " << reto->getLargura();
     
     std::cout << "\n"; 
+    
+    std::cout << "A altura é: " << reto->getAltura();
+    
+    std::cout << "\n\n"; 
     
  
     return 0;
