@@ -7,22 +7,22 @@ int main()
 {
     double larg, alt;
 	
-    Retangulo *reto = new Retangulo();
-    delete reto;
+    Retangulo *retangulo = new Retangulo();
+    delete retangulo;
     
     std::cout << "Digite a largura: ";
     std::cin >> larg;
-    reto->setLargura(larg);
+    retangulo->setLargura(larg);
     
     std::cout << "Digite a altura: ";
     std::cin >> alt;
-    reto->setAltura(alt);
+    retangulo->setAltura(alt);
     
-    std::cout << "A largura é: " << reto->getLargura();
+    std::cout << "A largura é: " << retangulo->getLargura();
     
     std::cout << "\n"; 
     
-    std::cout << "A altura é: " << reto->getAltura();
+    std::cout << "A altura é: " << retangulo->getAltura();
     
     std::cout << "\n\n"; 
     
